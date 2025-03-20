@@ -43,4 +43,14 @@ Caso tenha selecionado *Other* no Board Type, um menu com varias opções de pla
 Após um tempo, uma nova instancia do VS Code será aberta, nela estará seu projeto.
 
 ---
+## Como compilar e passar o programa pra o microcontrolador?
 
+Quando o arquivo estiver pronto para ser compilado e colocado no robô, basta voltar ao menu lateral usado para criar o projeto e clicar no botão *Compile Project*, isso irá gerar o arquivo necessário para programar o microcontrolador.
+
+Quando o projeto terminar de ser compilado, abra a pasta *build/* no explorador de arquivos e procure pelo arquivo *nome_do_robo.uf2*.
+
+<img src="arquivos_auxiliares\explorador_de_arquivos.png" alt="Diretório build/" />
+
+Agora conecte o robô no computador enquanto pressiona o botão *BOOTSEL* na placa do microcontrolador, isso irá fazer com que o MCU apareça no modo de *mass storage*, permitindo que ele seja visto no explorador de arquivos. Agora basta copiar o arquivo .uf2 e colar dentro do armazenamento do microcontrolador.
+
+[mostrando como copiar e colar para pico]
